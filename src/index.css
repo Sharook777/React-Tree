@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Main-Page {
+  height: 100vh;
+  background: linear-gradient(#1a40c9, #2348cb);
+  display: flex;
+  flex-direction: column;
+}
+
+.Navbar-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+  color: white;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+}
+
+.Nav-Link {
+  margin: 0 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.Nav-Link.Active {
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+
+.Nav-Link.Active:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid white;
+  height: 0;
+  width: 15px;
+  left: -3px;
+  bottom: 0;
+}
+
+.Nav-Link-Button {
+}
+
+.Main-Wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.Main-Caption {
+  color: white;
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.Flex-1 {
+  flex: 1;
+}
+
+.Std-Pad {
+  padding: 30px 80px;
+}
+
+.Bevel-Button {
+  padding: 10px 30px;
+  background: #2348cb;
+  color: white;
+  box-shadow: outset;
+  box-shadow: -4px -4px 14px 0px rgb(255 255 255 / 40%),
+    6px 4px 14px 0px rgb(0 0 0 / 40%);
+  border-radius: 5px;
+}
